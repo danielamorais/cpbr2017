@@ -1,0 +1,80 @@
+Objetivo: Convencer as pessoas a usarem GNU/Linux
+Como: Indicando as facilidades e liberdades que podem ser obtidas graças ao SO 
+
+MOTIVAÇÕES PARA USAR GNU/Linux
+Antes de tudo é necessário entender por quê você deve usar GNU e assistir essa palestra. Para qualquer tipo de usuário, usar uma distribuição GNU lhe garante o poder sob o seu computador: você de fato é o dono do seu computador e sabe o que está acontecendo no sistema. 
+Quando eu digo ser dono de fato do seu computador é poder instalar e remover o programa que quiser e saber quais serviços estão rodando e o que eles fazem. Infelizmente esta não é a realidade de quem está acostumado a usar Windows, o qual te obriga a fazer atualizações forçadas (justamente na hora que você está com presa e precisa usar o computador para outra coisa), ao instalar o Windows 10 as únicas opções disponíveis são "coletar um pouco dos seus dados ou TODOS os seus dados" e enviar para a Microsoft. Além da dificuldade imposta obrigatoriamente para quem deseja formatar seja para colocar um novo Windows ou GNU: Em alguns computadores da Positivo, o setup da BIOS (o lugar onde você pode configurar opções do boot como se deseja bootar por pendrive, DVD etc) veem por padrão desativado para impedir as pessoas de remover do computador o Windows 8. 
+Ao usar uma distribuição GNU, há uma preocupação de fato na liberdade do usuário. Não há nenhum software imposto obrigatoriamente para que você use, há muita documentação disponível e comunidade aberta para te ajudar. 
+Para quem é desenvolvedor ou de alguma área de tecnologia, é essencial aprender a usar GNU. Ao menos que você faça parte de um projeto que use Objective-C, Swift ou C#, você trabalhará com outras tecnologias no futuro e precisará aprender em algum momento. Estes projetos inclusives estão abrindo o código e sendo portados para GNU/Linux: O Swift está disponível para Ubuntu, é possível compilar Objective-C que não use o Cocoa (biblioteca para desenvolver aplicativos iOS e macOS) em GNU, existem várias IDEs disponíveis para C#, o bash está disponível no Win10 etc. 
+Para os desenvolvedores é ter um controle maior do seu projeto: conseguir compilar de maneira mais fácil, automatizar através de scripts, usar ferramentas que são feitas mais user-friendly para GNU como Jenkins, Git, Maven etc.
+O mesmo vale para administradores de redes e de servidores, terão que trabalhar com o sistema GNU e com as ferramentas da área que são mais user-friendly para GNU. 
+Para quem é gamer ou designer, sabemos que é uma barreira usar GNU pela familiaridade com os softwares da Adobe e do Corel e as dificuldades de drivers impostas pela nVidia. Ao menos a Steam já possui portabilidade para alguns jogos em distribuições GNU porém não há tanto cuidado em corrigir os bugs encontrados e relatados. Deve-se botar mais pressão sob estas empresas para que seja possível ter perfomance máxima do seu jogo e seu software esteja disponível na sua distribuição. Existe uma pressão de mercado para designers usarem Adobe e Corel, existem muitos softwares livres como GIMP e Inkscape e é bacana experimentarem e ousarem fazer sua arte em outro software; além do benefício de não gastar horrores com licenças.
+
+HISTÓRIA DO SOFTWARE LIVRE E O QUE É GNU
+A primeira impressão ao ouvir GNU ao invés de Linux causa um estranhamento, existe uma grande diferença entre os dois termos e é importante usar o termo correto para a definição correta. 
+Provavelmente você já deve ter ouvido falar em Richard Stallman, Linus Torvalds, Open Source e Software Livre. Nos primórdios do UNIX, Stallman foi o responsável por criar o GNU: um sistema operacional 100% livre compatível com o UNIX e foi o fundador da Free Software Foundation. Linus Torvalds foi o responsável por criar o kernel Linux, isto é, uma parte do sistema. Ambos se complementam e juntos formam o GNU/Linux o qual conhecemos por nomes de distribuição como Fedora, Debian, OpenSUSE etc. Portanto, ao se referir "Linux" você estará citando apenas o kernel e GNU o sistema operacional. 
+A Free Software Foundation fundada pelo Stallman defende os princípios de liberdade de usuário e criou 5 requisitos para um software ser considerado software livre: 
+1) Poder executar o programa como bem desejar  
+2) O código fonte deve ser aberto/acessível
+3) Redistribuir/copiar quantas cópias quiser do software original
+4) Alterar o código e redistribuir/copiar várias cópias deste software alterado  
+Esses itens são essenciais e foram elaborados pensando na liberdade do usuário. 
+A Open Source é uma organização que defende os mesmos princípios porém a sua causa é pelo modelo de negócio e não a liberdade do usuário. 
+Durante o processo de desenvolvimento de software, é muito mais fácil liberar o acesso ao código pois haverão mais iniciativas de todo o mundo para ajudar o desenvolvimento (vulgo mão-de-obra de graça ou mais barata) e não coincidentemente existe uma lei não enunciada pelo Linus que leva o seu nome e praticamente diz que "mais olhos, menos bugs".
+É evidente que é muito mais barato e prático em termos de negócio fornecer o acesso ao código fonte e poder redistribuir o software. Um artigo interessante do Alexandre Oliva realiza uma analogia entre a Teoria da Evolução de Darwin e o Software Livre, ao poder redistribuir e modificar programas é como se existissem várias versões diferentes disponíveis e muito mais possibilidade de vantagem evolutiva daqueles que terão somente uma versão de código fechado, quem faz a escolha de quais programas irão "sobreviver e gerar descendentes" é o usuário e não o meio natural. É neste ponto em que a Open Source e a Linux Foundation falham: não priorizar as necessidades do usuário acima de tudo.     
+Propositalmente houve um apagamento do nome GNU e hoje popularmente referem-se simplesmente como Linux, algo causado por diferenças ideológicas. A Linux Foundation e a Open Source acreditam neste viés de acesso ao código como modelo de negócio enquanto a Free Software Foundation prioriza o interesse do usuário, sendo até confundida como "anti-mercado" quando é justamente através de atender as necessidades do usuário que é possível dominar um segmento de software.
+É com muita razão que muitos vêem com olhos desconfiados a Linux Foundation: O kernel Linux usa sofwares proprietários e no contexto em que é evidente a vigilância em massa e invasão de privacidade levantadas por Snowden, não há nenhuma confiabilidade sem ter acesso e garantia do que estes códigos executam e as parcerias nada mais nada menos como a Microsoft.
+
+KERNEL-LIBRE
+É nesse contexto de desconfiança que surgiu o kernel-libre, mantido pela Free Software Foundation. O kernel é a camada mais baixa e próxima do hardware de um sistema operacional, dizemos camada mais baixa quando há poucas abstrações, ou seja, está próximo a linguagem de máquina de 1 e 0s e a manipulação do hardware é feita sem muitas camadas e foi usado C e Assembly, uma camada mais alta se refere a uma linguagem mais abstrada e quando o software desenvolvido tem fins diretos para o usuário.   
+O kernel é responsável por gerenciar as chamadas de sistemas ao hardware e abstrai o hardware de forma que seja possível desenvolver diversas aplicações que funcionem em diferentes configurações de máquina. Quando executamos algum programa, ele usa durante ms (milisegundos) o processador e logo em seguida outros processos são executados, isso é feito com uma rapidez que há impressão de que é tudo simultâneo e que está usando durante todo tempo seu processador. O kernel é o responsável por gerenciar como os processos são executados no seu processador, é quem submete um trecho de determinado programa ou processo para ser executado no processador e diz por quanto tempo deverá ser executado. Por questões de seguraça nenhum processo poderá interferir nos outros processos e é o kernel o responsável além de manipulá-los por isolá-los. 
+É justificado a preocupação da Free Software Foundation visto a grande importância do kernel num sistema operacional é essencial saber o que de fato aquele código executa. O kernel-libre é um kernel que possui exatamente as mesmas funcionalidades que o Kernel Linux exceto por possuir todo o código aberto e livre, ou seja, não há nenhum pedaço de código que não saiba o que ele de fato executa ou os chamados "blobs" e por menor que seja o trecho de código ele pode comprometer toda a segurança do sistema se não é possível fazer uma auditoria.
+O kernel-libre é hoje mantido pelo Alexandre Oliva, developer da Red Hat e membro da Free Software Foundation da América Latina e existem muitas distribuições que vêem com ele por default e é muito fácil remover o Kernel Linux e instalar o Libre naquelas distribuições que não vêem por default.
+
+DISTRIBUIÇÕES E AMBIENTES GRÁFICOS 
+As mais populares distribuições hoje em dia vêem com o kernel linux como default como o Fedora, Ubuntu, Slackware, Tails etc. A única entre as mais populares que não usa é o Debian, o qual usava o kernel-linux até uma das últimas versões mas atualmente não vêem por default.
+Escollher uma distribuição é uma escolha pessoal e é importante saber que há distribuições que se importam de fato com o usuário ao ponto de serem 100% livres e transparente com os seus usuários. Essas distribuições são poucas conhecidas e são mantidas por comunidade: BLAG, Trisquel, Parabola e GuixSD. O GuixSD é uma distribuição nova que ainda está na fase beta, mantida pela FSF e é já é vista como a "distro mais hackeavel/costumizavel" ou "The Emacs Of Distros". Ela mantém um grafo de todas as dependências e evita possíveis conflitos ao remover ou atualizar algo e possui uma opção de "roll-back" caso a atualização dê errado, além disso com ela é possível repiclar as configurações do sistema de maneira muito fácil já que basicamente todas as configurações estão num arquivo feito com a linguagem Scheme. Apesar de ainda estar no status de beta, já vêem ganhando o seu espaço e muita gente vem usando em DevOps e substituindo pelo Docker pela facilidade de voltar versões e replicar configurações do sistema.
+
+Você pode escolher a distribuição que lhe adequar e existem vários ambientes gráficos que podem ser usados de acordo com gosto de designer ou especificação de sistema: O "ambiente gráfico" é independente da distribuição, é possível usar GNU/Linux apenas no terminal e sem nenhuma interface. Existem ambientes específicos para quem está acostumado com o Windows como o cinnamon e o KDE, o XFCE para máquinas que tem pouco recurso computacional e o GNOME e o Unity. Cada distribuição vêem como padrão uma destes ambientes gráficos mas é possível desinstalar e instalar outro ou mesmo já conseguir uma .iso pronta de acordo com o seu ambiente gráfico de preferência.      
+
+PACOTES E GERENCIADOR DE PACOTES    
+Um ambiente gráfico não é o que de fato caracteriza e diferencia as distribuições, uma distribuição basicamente é formada pela comunidade, o kernel usado e o gerenciador de pacotes. Um pacote nada mais é que um arquivo comprensado que contém o software, suas dependências e instruções de como deve ser instalado. Os pacotes mais comuns são RPM e .deb, distribuições baseadas ou derivadas do Fedora ou RHEL utilizam o rpm e baseadas em Debian e Ubuntu o .deb. O gerenciador de pacotes é o responsável por buscar um pacote no repositório, instalá-lo e lidar com os possíveis conflitos deste pacote como falta de dependências ou versão errada, o yum e o dnf (este um fork e versão melhorada do yum) são os gerenciadores de pacotes do RPM e ainda há um gerenciador de pacotes chamado RPM que instala RPM, a diferença é que este não é capaz de lidar com os conflitos.  
+
+DIRETÓRIO E PERMISSÕES DE ARQUIVOS 
+A estrutura de diretório é meio confusa para quem está acostumado com Windows, é uma árvore com muitos filhos. O essencial é saber que não existirá C: ou D:, tudo faz parte de um único diretório que se inicia com /. O diretório /bin armazena os executáveis padrão da distribuição como os comandos ls, cd, cat etc, o /boot contém o kernel e os arquivos necessários para ser usado pelo gerenciador de boot, a maioria dos programas instalados pelo usuário está em /usr/lib ou /usr/bin (apesar de parecer óbvio "usr" não significa User e sim UNIX System Resources), o /etc contém os arquivos de configuração do sistema, os periféricos como mouse, pendrive, placa de som e tudo que é hardware está em /dev.
+É fácil verificar as permissões de arquivos e trocá-las, o primeiro caracter signifca o tipo:
+"-" arquivo normal
+"d" diretório
+"l" link simbólico, aponta para um lugar 
+Os três primeiros caracteres referem-se ao dono do arquivo, os três do meio do grupo de usuários e o três últimos de todos os usuários: r para leitura, w para escrita e x execução. Com a seguinte tabela é fácil verificar quais permissões determinar para cada usuário com o comando chmod:
+
+chmod ugo=rx file3
+
+    rwx
+ 0 - 000
+ 1 - 001
+ 2 - 010
+ 3 - 011
+ 4 - 100
+ 5 - 101
+ 6 - 110
+ 7 - 111
+
+Com o chown eu consigo alterar o dono daquele arquivo
+chown dono:grupo [arquivo ou diretório]
+
+EDITORES DE TEXTO
+vim: .vimrc, diferença entre vi, tutorial básico
+nano e emacs
+
+HACKS
+man, pwd, ls, cd, mv, cp e rm
+sudo !!
+restartar bash: . ~/.bashrc
+TTYS
+arp: arp-scan --localnet 
+restartar modo grafico: sudo /etc/init.d/gdm restart
+nmap: nmap -sP 192.168.0.*
+      sudo nmap 177.15.91.203
+s
+http://www.ic.unicamp.br/~islene/1s2009-mc514/Kernel_Linux.pdf
